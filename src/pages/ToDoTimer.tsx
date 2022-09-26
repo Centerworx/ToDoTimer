@@ -100,10 +100,10 @@ export default function ToDoTimer() {
                         // Render a countdown
                         return (
                           <Flex sx={{ flexDirection: "row" }}>
-                            <Box>{`Days: ${days}`}</Box>
-                            <Box>{`Hours: ${hours}`}</Box>
-                            <Box>{`Min: ${minutes}`}</Box>
-                            <Box>{`Sec: ${seconds}`}</Box>
+                            <Box sx={{ m: "0 8px" }}>{`Days: ${days}`}</Box>
+                            <Box sx={{ m: "0 8px" }}>{`Hours: ${hours}`}</Box>
+                            <Box sx={{ m: "0 8px" }}>{`Min: ${minutes}`}</Box>
+                            <Box sx={{ m: "0 8px" }}>{`Sec: ${seconds}`}</Box>
                           </Flex>
                         );
                       }
@@ -122,7 +122,7 @@ export default function ToDoTimer() {
             );
           })
         ) : (
-          <Message sx={{ mb: 2 }} variant="info">
+          <Message sx={{ m: "8px auto", maxWidth: 500 }} variant="info">
             Enter a ToDo to start the ToDo Timer
           </Message>
         )}
