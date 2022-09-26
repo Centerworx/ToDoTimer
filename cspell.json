@@ -1,0 +1,16 @@
+{
+  "version": "0.2",
+  "words": [
+    "Avenir",
+    "darkgray",
+    "darkred",
+    "datetime",
+    "Menlo"
+  ],
+  "ignorePaths": [
+    "**/*.path"
+  ],
+  "ignoreRegExpList": [
+    "@[a-z\\-]+"
+  ]
+}
