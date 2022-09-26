@@ -20,6 +20,7 @@ export default function Input({
   label,
   error,
   value: inputValue = "",
+  sx,
   onChange,
   ...inputProps
 }: InputProps) {
@@ -29,7 +30,7 @@ export default function Input({
 
   return (
     <Box sx={{ mb: 2, mr: 2 }}>
-      <Label variant="default" htmlFor={name}>
+      <Label variant="default" htmlFor={name} sx={{ fontWeight: 600 }}>
         {label}
       </Label>
       <ThemeInput
@@ -37,6 +38,7 @@ export default function Input({
         variant="default"
         id={name}
         name={name}
+        sx={{ ...sx, minHeight: 40 }}
         aria-label={label}
         aria-invalid={Boolean(error)}
         aria-errormessage={`error${name}`}

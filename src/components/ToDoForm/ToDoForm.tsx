@@ -56,7 +56,7 @@ export default function ToDoForm() {
             type="date"
             label="Due Date"
             placeholder="mm/dd/yyyy"
-            min={getPreviousDate()}
+            min={getPreviousDate(0)}
             value={formState.date}
             name={FORM_NAMES.date}
             onChange={onChange(FORM_NAMES.date)}
@@ -76,7 +76,9 @@ export default function ToDoForm() {
             {error}
           </Message>
         )}
-        <Button type="submit">Submit</Button>
+        <Button type="submit" sx={{ mt: 4 }}>
+          Submit
+        </Button>
       </Flex>
     </form>
   );
